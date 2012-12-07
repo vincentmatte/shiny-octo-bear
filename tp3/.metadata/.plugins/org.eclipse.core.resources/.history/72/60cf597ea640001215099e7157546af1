@@ -1,0 +1,28 @@
+package tp;
+
+/**
+ * Permet la création d'un nouveau memento
+ *
+ */
+public class CreateurMemento {
+	
+	private int zoom;
+	private int x;
+	private int y;
+	
+	public void nouveauMemento(int pZoom, int pX, int pY){
+		zoom = pZoom;
+		x = pX;
+		y = pY;
+	}
+	
+	public Memento sauverDansMemento(){
+		return new Memento(zoom,x,y);
+	}
+	
+	public void restaurerDepuisMemento(Memento pMemento){
+		zoom = pMemento.getZoom();
+		x = pMemento.getX();
+		y = pMemento.getY();
+	}	
+}

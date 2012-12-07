@@ -4,8 +4,9 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * Contient la Pile de Memento <p>
- * {@link http://rpouiller.developpez.com/tutoriel/java/design-patterns-gang-of-four/?page=page_4#LVI-F}
+ * Contient la Pile de Memento
+ * 
+ *
  */
 public class PileMemento {
 	

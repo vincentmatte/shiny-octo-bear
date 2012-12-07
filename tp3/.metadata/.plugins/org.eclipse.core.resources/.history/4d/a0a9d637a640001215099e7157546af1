@@ -1,8 +1,8 @@
 package tp;
 
+//Inspiré de http://rpouiller.developpez.com/tutoriel/java/design-patterns-gang-of-four/?page=page_4#LVI-F
 /**
- * Contient la sauvegarde actuelle d'un memento <p>
- * {@link http://rpouiller.developpez.com/tutoriel/java/design-patterns-gang-of-four/?page=page_4#LVI-F}
+ *Contient la sauvegarde actuelle d'un memento
  */
 public class Memento {
 	private int zoom;

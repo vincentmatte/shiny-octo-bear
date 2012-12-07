@@ -1,0 +1,8 @@
+package tp;
+
+import java.util.LinkedList;
+import java.util.List;
+
+public class PileMemento {
+	private List<Memento> liste = new LinkedList<Memento>();
+}

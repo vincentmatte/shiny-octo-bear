@@ -1,8 +1,8 @@
 package tp;
 
 /**
- * Permet la création d'un nouveau memento <p>
- * {@link http://rpouiller.developpez.com/tutoriel/java/design-patterns-gang-of-four/?page=page_4#LVI-F}
+ * Permet la création d'un nouveau memento
+ *
  */
 public class CreateurMemento {
 	
@@ -31,11 +31,6 @@ public class CreateurMemento {
 		return new Memento(zoom,x,y);
 	}
 	
-	/**
-	 * Restaurer l'étant précédent venant 
-	 * d'un memento
-	 * @param pMemento Objet de type Memento
-	 */
 	public void restaurerDepuisMemento(Memento pMemento){
 		zoom = pMemento.getZoom();
 		x = pMemento.getX();
