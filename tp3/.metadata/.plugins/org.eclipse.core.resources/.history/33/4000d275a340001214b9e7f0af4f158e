@@ -1,0 +1,13 @@
+package tp;
+
+public class CreateurMemento {
+	private int zoom;
+	private int x;
+	private int y;
+	
+	public void CreeMemento(int pZoom, int pX, int pY){
+		zoom = pZoom;
+		x = pX;
+		y = pY;
+	}
+}

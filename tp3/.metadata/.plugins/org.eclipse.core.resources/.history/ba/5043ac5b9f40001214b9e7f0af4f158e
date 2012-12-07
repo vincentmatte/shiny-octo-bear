@@ -1,0 +1,14 @@
+package tp;
+
+public class Memento {
+	private int zoom;
+	private int x;
+	private int y;
+	
+	private Memento(int pZoom, int pX, int pY)
+	{
+		zoom = pZoom;
+		x = pX;
+		y = pY;
+	}
+}

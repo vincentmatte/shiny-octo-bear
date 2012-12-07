@@ -1,5 +1,22 @@
 package tp;
 
 public class CreateurMemento {
+	
+	private int zoom;
+	private int x;
+	private int y;
+	
 
+	public Memento sauverDansMemento(){
+		return new Memento(zoom,x,y);
+	}
+	
+	public void restaurerDepuisMemento(Memento pMemento){
+		zoom = pMemento.getZoom();
+		x = pMemento.getX();
+		y = pMemento.getY();
+	}
+	
+
+	
 }
