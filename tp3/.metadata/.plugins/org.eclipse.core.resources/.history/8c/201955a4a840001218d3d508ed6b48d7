@@ -1,0 +1,44 @@
+package tp;
+
+/**
+ * Permet la création d'un nouveau memento <p>
+ * {@link http://rpouiller.developpez.com/tutoriel/java/design-patterns-gang-of-four/?page=page_4#LVI-F}
+ */
+public class CreateurMemento {
+	
+	private int zoom;
+	private int x;
+	private int y;
+	
+	/**
+	 * Ajouter un nouveau memento
+	 * sauverDansMemento doit etre appeler ensuite
+	 * @param pZoom Zoom en poucentage
+	 * @param pX Position en X
+	 * @param pY Position en Y
+	 */
+	public void nouveauMemento(int pZoom, int pX, int pY){
+		zoom = pZoom;
+		x = pX;
+		y = pY;
+	}
+	
+	/**
+	 * Sauvegarde l'état actuel dans un memento
+	 * 
+	 */
+	public Memento sauverDansMemento(){
+		return new Memento(zoom,x,y);
+	}
+	
+	/**
+	 * Restaurer l'étant précédent venant 
+	 * d'un memento
+	 * @param pMemento Objet de type Memento
+	 */
+	public void restaurerDepuisMemento(Memento pMemento){
+		zoom = pMemento.getZoom();
+		x = pMemento.getX();
+		y = pMemento.getY();
+	}	
+}

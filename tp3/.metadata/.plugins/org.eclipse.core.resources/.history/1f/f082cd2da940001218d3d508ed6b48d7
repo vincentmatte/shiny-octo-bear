@@ -1,0 +1,12 @@
+package tp;
+
+public class TestMemento {
+	public static void main(String[] args){
+		
+	}
+	PileMemento ptest = new PileMemento();
+	CreateurMemento nouveauMemento = new CreateurMemento(100,15,50);
+
+	//Ajout de l'état 
+	ptest.
+}
