@@ -21,5 +21,9 @@ public class TestMemento {
 		
 		//Ajouter le vieuxMemento comme Memento actuel
 		createurMemento.restaurerDepuisMemento(vieuxMemento);
+		
+		GestionnaireSauvegarde save = new GestionnaireSauvegarde();
+		
+		save.Sauvegarde(vieuxMemento, "test");
 	}
 }
